@@ -33,10 +33,10 @@ while True:
     n = int(input())
     if n == 0: break
 
-	# n을 만들 수 있는 방법이 여러가지라면 차이가 가장 큰 것을 출력하라고 했으므로
-	# 가장 작은 소수와 홀수인 3부터 시작
+    # n을 만들 수 있는 방법이 여러가지라면 차이가 가장 큰 것을 출력하라고 했으므로
+    # 가장 작은 소수와 홀수인 3부터 시작
     for i in range(3, n + 1, 2):
-		# 합이 n인 두 수가 모두 소수이면 값 출력
+	# 합이 n인 두 수가 모두 소수이면 값 출력
         if check_prime[i] and check_prime[n - i]:
             print(f'{n} = {i} + {n - i}')
             flag = 1
